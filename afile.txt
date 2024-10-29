@@ -12,9 +12,7 @@ t1
 
 t2
 updddd
-
-
-updadddd
+updadd
 
 new mod
 master!!!
