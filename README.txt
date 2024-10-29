@@ -1,3 +1,5 @@
+跟李立超老师学习Git的笔记：
+
 配置:
 name
 	git config --global user.name "lilichao"
