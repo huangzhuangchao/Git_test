@@ -7,10 +7,6 @@
 6666
 6666
 
-t1
-
-t2
-
 update
 
 updadddd
@@ -23,4 +19,4 @@ bg1 brand!
 
 other boy~ coming
 
-biubiu
+biu biu
