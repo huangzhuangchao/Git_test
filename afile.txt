@@ -20,4 +20,4 @@ new mod
 master!
 m!
 
-bg1
+bg1 bg2
