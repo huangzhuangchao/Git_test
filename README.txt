@@ -63,9 +63,28 @@ git switch -c <branch name> # 创建并切换分支
 在于远程的仓库可以被多人同时访问使用，方便我们协同开发。在实际工作中，git的服务器通常由公司搭建内部使用或是购买一些公共的私有git服务器。我们
 学习阶段，直接使用一些开放的公共git仓库。目前我们常用的库有两个:GitHub和Gitee(码云)
 
-git remote add origin https://github.com/lilichao/git-demo.git
+将本地库上传 git：
+git remote add origin https://github.com/huangzhuangchao/Git_test.git
 	# git remote add <remote name> <url>
 git branch -M main
 	# 修改分支的名字的为main
 git push -u origin main
 	# git push 将代码上传服务器上
+
+将本地库上传 gitee：
+git remote add gitee https://gitee.com/huangzhuangchao/git_demo.git
+git push -u gitee main
+
+远程库的操作的命令
+git remote # 列出当前的关联的远程库
+git remote add <远程库名> <url> # 关联远程仓库
+git remote remove <远程库名>  # 删除远程库
+git push -u <远程库名> <分支名> # 向远程库推送代码，并和当前分支关联
+git push <远程库> <本地分支>:<远程分支>
+git clone <url> # 从远程库下载代码
+
+git push # 如果本地的版本低于远程库，push默认是推不上去
+git fetch # 要想推送成功，必须先确保本地库和远程库的版本一致，fetch它会从远程仓库下载所有代码，但是它不会将代码和当前分支自动合并
+		 # 使用fetch拉取代码后，必须要手动对代码进行合并
+git pull  # 从服务器上拉取代码并自动合并
+
